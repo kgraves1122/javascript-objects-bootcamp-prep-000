@@ -3,12 +3,12 @@ var playlist = {
   rihanna: 'Work'
 };
 
-function updatePlaylist (obj, key, val) {
-  obj.key = val;
-  return obj;
+function updatePlaylist (playlist, key, val) {
+  playlist.key = val;
+  return playlist;
 }
 
-function removeFromPlaylist (obj, key) {
-  delete obj.key;
+function removeFromPlaylist (playlist, key) {
+  delete playlist.key;
   return obj;
 }
